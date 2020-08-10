@@ -1,3 +1,20 @@
+
+
+# https://stackoverflow.com/questions/49618424/can-i-write-device-driver-for-ios-in-c
+
+It's not possible to write drivers for iOS. The only way to access the port (and Bluetooth classic) is the External Accessory Framework.
+
+Some common accessory features are accessible through other frameworks like Game ControllerFramework. The WWDC2013 Designing Accessories for iOS and OS X and WWDC2014 lists some of the frameworks you can use to interact with accessories.
+
+You need MFi as a hardware vendor and for the AppStore (you need to provide your custom protocol string/s, if any). The program provides detailed information about the iPod Accessory Protocol (iAP).
+
+Maybe you can find this SO question useful USB-Programming on iPhone
+
+
+
+
+
+
 What is XNU?
 ===========
 
